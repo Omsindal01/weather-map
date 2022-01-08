@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="ionicons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Road+Rage&family=Roboto&family=Shippori+Antique+B1&display=swap"
+      rel="stylesheet"
+    />
+    <title>location and weather from map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="App">
+      <div class="show-results">
+        <div class="quit">
+          <button class="exit"><i class="ion-power icon"></i></button>
+          <i class="ion-earth icon-big"></i>
+        </div>
+        <div class="search-history">
+          <h2>Recent Searches</h2>
+
+          <!-- <img src="download.jpg" class="logo" /> -->
+        </div>
+        <ul class="results"></ul>
+      </div>
+      <div id="map"></div>
+    </main>
+  </body>
+</html>
